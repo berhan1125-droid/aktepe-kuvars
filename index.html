@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aktepe K.M.G. | Kuvars · Mermer · Granit — 3D Tezgah Stüdyosu</title>
+<meta name="description" content="Aktepe Kuvars Mermer Granit: mutfak tezgahınızı 3D olarak tasarlayın, taşınızı canlı görün. Gebze, Darıca, Dilovası ve Tuzla'da ölçü, üretim ve montaj.">
+<meta name="theme-color" content="#0b0b0c">
+<meta property="og:title" content="Aktepe K.M.G. — Mutfağınızı 3D tasarlayın">
+<meta property="og:description" content="Kuvars, mermer ve granit tezgahınızı gerçek zamanlı 3D stüdyoda seçin.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0dcb4'/%3E%3Cstop offset='1' stop-color='%238a6a3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-size='36' text-anchor='middle' fill='%23120e08'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="loading">
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="word"><span>A</span><span>K</span><span>T</span><span>E</span><span>P</span><span>E</span></div>
+  <div class="bar"><i id="loader-bar"></i></div>
+  <div class="meta"><span>Taşlar hazırlanıyor</span><span id="loader-pct">0%</span></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor"><span class="lbl">SÜRÜKLE</span></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Aktepe ana sayfa">
+      <span class="mono">A</span>
+      <span><b>AKTEPE</b><small>Kuvars · Mermer · Granit</small></span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#malzemeler">Malzemeler</a>
+      <a href="#studyo">3D Stüdyo</a>
+      <a href="#surec">Süreç</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <a class="btn btn-gold" href="#studyo">Tasarlamaya Başla</a>
+    <button class="burger" id="burger" aria-label="Menü"><i></i></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#malzemeler">Malzemeler</a>
+  <a href="#studyo">3D Stüdyo</a>
+  <a href="#surec">Süreç</a>
+  <a href="#iletisim">İletişim</a>
+  <a class="btn btn-wa" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg> WhatsApp'tan Yazın</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <canvas id="hero-canvas" aria-label="Şelale kenarlı mutfak adası, 3D önizleme"></canvas>
+    <div class="hero-meta">
+      <div class="live">Gerçek zamanlı 3D</div>
+      <div><b>Gebze</b> · Darıca · Dilovası · <b>Tuzla</b></div>
+    </div>
+    <div class="wrap hero-ui">
+      <div>
+        <span class="eyebrow fade-up">Aktepe K.M.G. — Tezgah Stüdyosu</span>
+        <h1 class="hero-title" style="margin-top:22px">
+          <span class="line"><span>Taşınızı</span></span>
+          <span class="line"><span class="outline">dokunarak</span></span>
+          <span class="line"><span>seçin<span class="gold">.</span></span></span>
+        </h1>
+        <p class="hero-sub fade-up">Kuvars, mermer ve granit tezgahınızı mutfağınıza girmeden önce 3D olarak görün. Ölçü, üretim ve montaj tek elden.</p>
+        <div class="hero-cta fade-up">
+          <a class="btn btn-gold" href="#studyo" data-hover>3D Mutfağını Tasarla <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" data-wa href="#" data-hover><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg> WhatsApp</a>
+        </div>
+      </div>
+      <div class="dock fade-up">
+        <div class="dock-info">
+          <div class="k">Şu an adada · <span id="hero-idx">01</span> / 08</div>
+          <div class="n" id="hero-name">Calacatta Oro</div>
+          <div class="t" id="hero-type">Kuvars</div>
+        </div>
+        <div class="swatches" id="hero-swatches" role="group" aria-label="Taş seçimi"></div>
+        <div class="scroll-hint"><i></i> Kaydır</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ŞERİT -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Kuvars</span><span>Mermer</span><span>Granit</span><span>Porselen</span><span>Şelale Ada</span><span>Ölçüye Özel</span>
+      <span>Kuvars</span><span>Mermer</span><span>Granit</span><span>Porselen</span><span>Şelale Ada</span><span>Ölçüye Özel</span>
+    </div>
+  </div>
+
+  <!-- MANİFESTO -->
+  <section class="manifesto">
+    <div class="wrap">
+      <span class="eyebrow">Biz kimiz</span>
+      <p id="manifesto">Her plaka yalnızca bir kez oluşur. Milyonlarca yılda şekillenen taşı, milimetrik işçilikle mutfağınızın kalbine taşıyoruz.</p>
+    </div>
+  </section>
+
+  <!-- MALZEME LABORATUVARI -->
+  <section class="lab" id="malzemeler">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow reveal">Malzeme laboratuvarı</span>
+          <h2 class="reveal d1">Sekiz taş.<br><span class="outline">Sonsuz</span> mutfak.</h2>
+        </div>
+        <p class="reveal d2">Bir karta dokunun, o taş anında 3D stüdyodaki mutfağa yerleşsin. Leke, ısı ve çizik direncini kartın üzerinde karşılaştırın.</p>
+      </div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <!-- 3D STÜDYO -->
+  <section class="studio" id="studyo">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow reveal">3D mutfak stüdyosu</span>
+          <h2 class="reveal d1">Mutfağınızı<br><span class="gold">canlı</span> tasarlayın.</h2>
+        </div>
+        <p class="reveal d2">Taşı, kalınlığı ve dolap rengini seçin, mutfağın etrafında dolaşın. Beğendiğiniz tasarımı tek tuşla bize gönderin, teklifimizi hazırlayalım.</p>
+      </div>
+
+      <div class="studio-box reveal">
+        <div class="viewport" id="viewport">
+          <canvas id="studio-canvas" aria-label="3D mutfak tasarım alanı"></canvas>
+          <div class="hud tl"><span class="live">Canlı önizleme</span><b id="hud-stone">Calacatta Oro</b></div>
+          <div class="hud tr" id="hud-dims">Ada 260 × 105 cm<br>Tezgah 390 × 64 cm</div>
+          <div class="drag-hint" id="drag-hint">
+            <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12M11 11.5v-2a1.5 1.5 0 0 1 3 0V12M14 10.5a1.5 1.5 0 0 1 3 0V12M17 11.5a1.5 1.5 0 0 1 3 0V16a6 6 0 0 1-6 6h-2 .2a6 6 0 0 1-5-2.7L7 19c-.3-.5-1.4-2.3-3.2-5.5a1.5 1.5 0 0 1 .5-2 1.9 1.9 0 0 1 2.3.3L8 13"/></svg></span>
+            Sürükleyin · Yakınlaştırın
+          </div>
+          <div class="views" id="views" role="group" aria-label="Kamera açısı">
+            <button data-view="genel" class="on">Genel</button>
+            <button data-view="ada">Ada</button>
+            <button data-view="detay">Kenar detayı</button>
+            <button data-view="on">Önden</button>
+            <button data-view="ust">Kuş bakışı</button>
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="Tasarım seçenekleri">
+          <div>
+            <h4>Tezgah taşı <em id="p-stone">Calacatta Oro</em></h4>
+            <div class="stone-grid" id="stone-grid"></div>
+          </div>
+          <div>
+            <h4>Kalınlık <em id="p-thick">3 cm</em></h4>
+            <div class="seg" id="seg-thick">
+              <button data-v="2">2 cm</button><button data-v="3" class="on">3 cm</button><button data-v="5">5 cm</button>
+            </div>
+          </div>
+          <div>
+            <h4>Dolap rengi <em id="p-cab">Antrasit</em></h4>
+            <div class="colors" id="cab-colors">
+              <button data-c="#3c4140" data-n="Antrasit" class="on" style="background:#3c4140" aria-label="Antrasit"></button>
+              <button data-c="#56624f" data-n="Adaçayı" style="background:#56624f" aria-label="Adaçayı yeşili"></button>
+              <button data-c="#1f2a3a" data-n="Gece mavisi" style="background:#1f2a3a" aria-label="Gece mavisi"></button>
+              <button data-c="#7a5a3e" data-n="Ceviz" style="background:#7a5a3e" aria-label="Ceviz"></button>
+              <button data-c="#e6e1d8" data-n="Kirli beyaz" style="background:#e6e1d8" aria-label="Kirli beyaz"></button>
+              <button data-c="#111111" data-n="Mat siyah" style="background:#111111" aria-label="Mat siyah"></button>
+            </div>
+          </div>
+          <div>
+            <h4>Ada <em id="p-island">Şelale kenarlı</em></h4>
+            <div class="seg" id="seg-island">
+              <button data-v="1" class="on">Şelale ada</button><button data-v="0">Adasız</button>
+            </div>
+          </div>
+          <div>
+            <h4>Işık</h4>
+            <div class="seg" id="seg-theme">
+              <button data-v="night" class="on">Akşam</button><button data-v="day">Gündüz</button>
+            </div>
+          </div>
+          <div class="summary" id="summary"></div>
+          <div class="actions">
+            <a class="btn btn-gold" id="send-design" href="#">Bu tasarımla teklif al <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <button class="btn btn-line" id="save-design" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg> Görseli indir</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖZELLİKLER -->
+  <div class="wrap">
+    <div class="feats">
+      <div class="feat reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg><h4>Yerinde ölçü</h4><p>Dolaplarınız kurulduktan sonra milimetrik ölçü alıyoruz.</p></div>
+      <div class="feat reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg><h4>Özel kesim</h4><p>Eviye, ocak ve şelale birleşimleri ölçüye göre hazırlanır.</p></div>
+      <div class="feat reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><h4>Teslim &amp; montaj</h4><p>Kendi ekibimizle temiz ve hızlı kurulum.</p></div>
+      <div class="feat reveal d3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><h4>Garanti</h4><p>Malzeme ve işçilikte garanti, montaj sonrası destek.</p></div>
+    </div>
+  </div>
+
+  <!-- SÜREÇ -->
+  <section class="process" id="surec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow reveal">Süreç</span>
+          <h2 class="reveal d1">Ekrandan<br><span class="outline">mutfağa</span>.</h2>
+        </div>
+        <p class="reveal d2">Tasarımınızı gönderdiğiniz andan montajın bittiği güne kadar her adımda yanınızdayız.</p>
+      </div>
+      <div class="steps" id="steps">
+        <div class="track"><i id="steps-line"></i></div>
+        <div class="step"><div class="dot">01</div><h3>3D tasarım</h3><p>Stüdyoda taşınızı ve kombinasyonunuzu seçip bize gönderin.</p></div>
+        <div class="step"><div class="dot">02</div><h3>Keşif &amp; ölçü</h3><p>Adresinize gelip yerinde ölçü alıyor, numuneleri gösteriyoruz.</p></div>
+        <div class="step"><div class="dot">03</div><h3>Üretim</h3><p>Plakalar atölyede ölçüye göre kesilip kenarları işleniyor.</p></div>
+        <div class="step"><div class="dot">04</div><h3>Montaj</h3><p>Ekibimiz tezgahı yerine monte edip birleşimleri tamamlıyor.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="contact" id="iletisim">
+    <div class="wrap">
+      <span class="eyebrow reveal">İletişim</span>
+      <h2 class="big reveal d1">Hadi<br><span class="outline">konuşalım</span><span class="gold">.</span></h2>
+      <div class="contact-grid">
+        <div class="reveal">
+          <h4>Telefon</h4>
+          <a class="tel" href="tel:+905362300806" data-hover>0 (536) 230 08 06</a>
+        </div>
+        <div class="reveal d1">
+          <h4>Hizmet bölgesi</h4>
+          <div class="chips"><span>Gebze</span><span>Darıca</span><span>Dilovası</span><span>Çayırova</span><span>Tuzla</span><span>Pendik</span></div>
+        </div>
+        <div class="reveal d2">
+          <h4>Çalışma saatleri</h4>
+          <p>Pazartesi – Cumartesi<br>08:30 – 19:00</p>
+        </div>
+      </div>
+      <div class="ctas reveal">
+        <a class="btn btn-wa" data-wa href="#" data-hover><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg> WhatsApp'tan yazın</a>
+        <a class="btn btn-line" href="https://maps.app.goo.gl/t69jVnkDrCFdrx35A" target="_blank" rel="noopener" data-hover><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> Yol tarifi al</a>
+        <a class="btn btn-line" href="#studyo" data-hover>3D Stüdyoya dön</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Aktepe Kuvars Mermer Granit</span>
+    <span>Kuvars · Mermer · Granit · Porselen tezgah</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" aria-label="WhatsApp ile yazın"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></a>
+<div class="toast" id="toast"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43a9.37 9.37 0 0 1 6.67 2.77 9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.6l6.03-1.58a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.33-8.02z"/></symbol>
+</svg>
+
+<script src="assets/vendor/three.bundle.js"></script>
+<script src="assets/js/stones.js"></script>
+<script src="assets/js/kitchen.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
